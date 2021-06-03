@@ -43,17 +43,16 @@ public class QuickSort {
         System.out.println("sub array: " + list);
 
         while (i <= j) {
-            // search for an element greater than or equal to pivot
+
             while (array[i] < pivot) {
                 i++;
             }
-            // search for an element less than or equal to pivot
+
             while (array[j] > pivot) {
                 j--;
             }
             if (i <= j) {
-                // swap
-                // pivot elements get swapped  if the condition is met
+
                 temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
@@ -107,17 +106,14 @@ public class QuickSort {
         //  System.out.println("sub array: " + list);
 
         while (i <= j) {
-            // search for an element greater than or equal to pivot
             while (array[i].compareTo(pivot)<0) {
                 i++;
             }
-            // search for an element less than or equal to pivot
             while (array[j].compareTo(pivot)>0) {
                 j--;
             }
             if (i <= j) {
-                // swap
-                // pivot elements get swapped  if the condition is met
+
                 temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
